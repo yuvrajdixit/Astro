@@ -16,6 +16,11 @@ const Details = () => {
         const {name, value} = e.target;
         setFormdata({ ...formdata, [name]: value});
     };
+
+    const handleChange1 = (e) => {
+        const {name, value} = e.target;
+        setFormdata({ ...formdata, [name]: value});
+    };
     
     const handleSubmit = (e) => {
     e.preventDefault();
@@ -94,9 +99,9 @@ const Details = () => {
              
           <input
             type="text"
-            name="name"
+            name="name1"
             value={formdata.name1}
-            onChange={handleChange}
+            onChange={handleChange1}
             required
             placeholder='Enter Your Name'
             
@@ -107,9 +112,9 @@ const Details = () => {
           
           <input
             type="text"
-            name="placeOfBirth"
+            name="placeOfBirth1"
             value={formdata.placeOfBirth1}
-            onChange={handleChange}
+            onChange={handleChange1}
             required
             placeholder='Enter Your Place Of Birth'
             
@@ -120,9 +125,9 @@ const Details = () => {
           
           <input
             type="time"
-            name="timeOfBirth"
+            name="timeOfBirth1"
             value={formdata.timeOfBirth1}
-            onChange={handleChange}
+            onChange={handleChange1}
             required
         
             
@@ -131,9 +136,9 @@ const Details = () => {
          
           <input
             type="date"
-            name="dateOfBirth"
+            name="dateOfBirth1"
             value={formdata.dateOfBirth1}
-            onChange={handleChange}
+            onChange={handleChange1}
             required
 
             
